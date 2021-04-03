@@ -30,7 +30,7 @@ function setup() {
 	fairy = createSprite(400,350)
 	fairy.addAnimation("image",fairyImage);
 	fairy.scale = 0.2;
-
+        fairy.setCollider("circle",500,-15,100)
 
 	star = createSprite(650,30);
 	star.addImage(starImg);
@@ -58,6 +58,7 @@ function draw() {
        
 	fairy.velocityX = 0;
 	fairy.velocityY = 0;
+	Matter.Body,setStatic(starBody,true)
 
 	
 
