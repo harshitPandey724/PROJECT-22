@@ -58,7 +58,7 @@ function draw() {
        
 	fairy.velocityX = 0;
 	fairy.velocityY = 0;
-	Matter.Body,setStatic(starBody,true)
+	Matter.Body.setStatic(starBody,true)
 
 	
 
